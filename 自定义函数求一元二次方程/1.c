@@ -1,3 +1,4 @@
+//æ±‚æ–¹ç¨‹ çš„æ ¹ï¼Œç”¨ä¸‰ä¸ªå‡½æ•°åˆ†åˆ«æ±‚å½“b^2-4acå¤§äº0ã€ç­‰äº0ã€å’Œå°äº0æ—¶çš„æ ¹ï¼Œå¹¶è¾“å‡ºç»“æœã€‚ä»ä¸»å‡½æ•°è¾“å…¥aã€bã€cçš„å€¼ã€‚
 #include<stdio.h>
 #include<math.h>
 void bigzero(double a,double b,double c,double d);
@@ -21,7 +22,7 @@ int main()
     return 0;
 }
 void bigzero(double a,double b,double c,double d){
-    x1=(-1*b+sqrt(d))/(2*a);//Êµ¸ù¹«Ê½£¬ÍÆµ¼¼ûÍ¼Ò»
+    x1=(-1*b+sqrt(d))/(2*a);//å®æ ¹å…¬å¼ï¼Œæ¨å¯¼è§å›¾ä¸€
     x2=(-1*b-sqrt(d))/(2*a);
     printf("x1=%.3lf %.3lf",x1,x2);
 }
@@ -31,9 +32,9 @@ void equalzero(double a,double b,double c,double d){
 }
 void smallzero(double a,double b,double c,double d){
     double t=sqrt(-d)/(2*a);
-    //Ö¤Ã÷£º
-    //µ±ÓĞĞé¸ùÊ±sqrt(b*b-4ac)=sqrt(-1*(4ac-b*b))=sqrt(-1)*sqrt(4ac-b*b)=i*sqrt(4ac-b*b)
-    //xµÄĞé¸ù½â¹«Ê½ÓëÊµ¸úÏàÍ¬£¬ÓÃÉÏÊöÈ¡´ú¿ª¸ù¼´¿É£¬¼ûÍ¼¶ş
+    //è¯æ˜ï¼š
+    //å½“æœ‰è™šæ ¹æ—¶sqrt(b*b-4ac)=sqrt(-1*(4ac-b*b))=sqrt(-1)*sqrt(4ac-b*b)=i*sqrt(4ac-b*b)
+    //xçš„è™šæ ¹è§£å…¬å¼ä¸å®è·Ÿç›¸åŒï¼Œç”¨ä¸Šè¿°å–ä»£å¼€æ ¹å³å¯ï¼Œè§å›¾äºŒ
     printf("x1=%.3lf+%.3lfi\t",-b/(2*a),t);
     printf("x2=%.3lf-%.3lfi",-b/(2*a),t);
 }
